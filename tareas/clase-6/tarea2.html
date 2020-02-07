@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Tarea 2</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <script src='main.js'></script>
 </head>
+
 <body>
-  
+  <form id="main-form">
+    <button id="button-add">Agregar</button>
+    <button id="button-remove">Quitar</button>
+    <button id="button-calculate" class="oculto">Calcular</button>
+    <div id="family">
+
+    </div>
+    <div id="statics" class="oculto">
+      <p>Mayor salario anual: <strong id="max-salary"></strong></p>
+      <p>Menor salario anual: <strong id="min-salary"></strong></p>
+      <p>Promedio salario anual: <strong id="avgY-salary"></strong></p>
+      <p>Promedio salario mensual: <strong id="avgM-salary"></strong></p>
+    </div>
+
+
+
+  </form>
+  <script src='tarea2.js'></script>
 </body>
+
 </html>
