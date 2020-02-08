@@ -43,7 +43,7 @@
 //       cosas que te gustan.
 
 
-
+//const comidasFavoritas = ['milanesa', 'asado', 'tortilla', 'oreo'];
 
 
 
@@ -51,7 +51,7 @@
 /*
     Tamaño del Array
     ================
-    
+
     Podemos verificar fácilmente cuántos elementos tenemos en nuestro Array con una propiedad:
     '.length'
 
@@ -64,9 +64,7 @@
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
 // imprimi utilizando console.log el resultado.
 
-
-
-
+//console.log(comidasFavoritas.length)
 
 
 /*
@@ -90,9 +88,12 @@
 
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
-
-
-
+/*
+let primerItem = comidasFavoritas[0]
+let segundoItem = comidasFavoritas[1]
+let tercerItem = comidasFavoritas[2]
+console.log(tercerItem)
+*/
 
 
 /*
@@ -116,13 +117,16 @@
 // con cualquier otra cosa.
 
 
+//console.log(comidasFavoritas)
+//comidasFavoritas[1]='dulce de leche'
+
 
 
 
 
 // TAREA: console.log todo el array para verificar.
 
-
+//console.log(comidasFavoritas)
 
 
 
@@ -146,15 +150,14 @@
 
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
-
-
+//comidasFavoritas.push('pizza')
 
 
 
 // TAREA: console.log todo el array para verificar.
 
 
-
+//console.log(comidasFavoritas)
 
 
 
@@ -181,11 +184,16 @@
 
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
-
-
-
-
-
+/*
+const a = [1,2,3]
+console.log(a)
+a.push(4)
+console.log(a)
+a [0] = 0 
+console.log(a)
+a.unshift(-1)
+console.log(a)
+*/
 
 // TAREA: Observa lo que sucede si agregas algo con.push(), cambias algo
 //       con notación de corchetes (array[1]) y
@@ -199,19 +207,19 @@
 /*
     Bucles
     ======
-    
+
     ¡La gente siempre ha sido perezosa, pero a veces avanza! A nosotros
-    no nos gusta repetir las mismas aburridas acciones una y otra vez, 
+    no nos gusta repetir las mismas aburridas acciones una y otra vez,
     así que buscamos formas de evitarlo.
 
-    La programación es igual. Por ejemplo, si quiero imprimir 10 veces 'JavaScript 
-    es increible!', ¿cuáles son mis opciones?. Por supuesto, puedo escribir 
-    diez líneas de código repitiendo la misma instrucción, pero también 
+    La programación es igual. Por ejemplo, si quiero imprimir 10 veces 'JavaScript
+    es increible!', ¿cuáles son mis opciones?. Por supuesto, puedo escribir
+    diez líneas de código repitiendo la misma instrucción, pero también
     puedo decirle a la computadora que lo repita en lugar de que yo lo escriba 10 veces.
 
     Para esto usamos bucles.
 
-    Cada ciclo debe tener tres cosas principales:
+    Cada iteracion debe tener tres cosas principales:
      - un punto de partida
      - una condición (punto final)
      - un contador (un paso)
@@ -242,13 +250,34 @@
       // + 1 es un contador / tamaño del paso
     }
 */
+//TAREA
+
+
+/*
+let numero = 0;
+
+while (numero<10){
+    numero += 1
+}
+*/
+
+
+
 
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
+//HINT: contadores pueden ser para arribar o para abajo
 
 
+/*
+let numero = 10;
+while (numero >0){
 
+    numero -= 1
+console.log(numero)
 
+}
+*/
 
 
 /*
@@ -304,7 +333,7 @@
 /*
     Bucles y Logica
     ===============
-    
+
     Traigamos bucles junto con las declaraciones if / else que aprendimos en
     nivel 1, y hagamos algo interesante.
 

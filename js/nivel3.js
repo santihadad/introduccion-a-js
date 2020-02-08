@@ -119,13 +119,18 @@
     // Eso quiere decir que se pueden cambiar los atributos y propiedades del elemento,
     // pero no la variable en sí misma. Vas a ver esto en acción ahora mismo.
 */
+/*
+const nuestroTwitter = document.querySelector('.twitter');
+console.log(nuestroTwitter)
+*/
 
 // TAREA: Ahora te toca a vos! — Obtené la etiqueta h1 de la página y guardala en una variable
 //       variable llamada nuestroTitulo.
 //       Utilizá console.log para ver lo que obtuviste!
 
 
-
+const titulo = document.querySelector('h1')
+console.log(titulo)
 
 
 
@@ -146,25 +151,21 @@
 
 // TAREA: Obtené todos los elementos <li> de la página en una variable llamada mediaLinks.
 
-
-
-
-
+const mediaLinks = document.querySelectorAll('li')
+console.log(mediaLinks)
 
 // TAREA: Ahora utilizá console.log para ver la cantidad de 
 // elementos li que hay con mediaLinks.length
 
-
-
-
+console.log(mediaLinks.length)
 
 
 // TAREA: ¿Te acordás de los bucles del nivel 2? Usando lo que sabés de ellos, realizá iteraciones
 //      sobre cada item de mediaLinks y mostralos en pantalla con console.log
 
-
-
-
+for(let i=0; i<mediaLinks.length; i++){
+    console.log(mediaLinks[i])
+}
 
 
 /*
@@ -184,10 +185,8 @@
 // TAREA: Obtené el contenido de nuestro elemento 'h1'
 // y utilizá console.log para mostrarlo.
 
-
-
-
-
+console.log(titulo.textContent)
+console.log(titulo.innerText)
 
 /*
     Editar el contenido de la página
@@ -204,10 +203,8 @@
 */
 
 // TAREA: Hagamos un nuevo título! Cambiá el contenido de nuestro 'h1' y ponele lo que quieras.
-
-
-
-
+const nombre = prompt('Como te llamas?')
+titulo.textContent = ('Hola ' + nombre)
 
 /*
     Editando atributos
@@ -222,10 +219,7 @@
 */
 
 // TAREA: Actualizá el valor del atributo 'src' de nuestra etiqueta 'img' a "img/kittens.jpeg".
-
-
-
-
+document.querySelector("img").src="img/kittens.jpeg";
 
 
 /*
@@ -248,10 +242,8 @@
 
 // Tarea: Obtené cualquier elemento de la página y cambiale algunos estilos.
 
-
-
-
-
+//titulo.style.backgroundColor = 'blue'
+//titulo.style.fontSize = '100px'
 
 /*
    Creando nuevos nodos (Elementos)
@@ -278,8 +270,18 @@
 //
 // P.S. También les podés dar estilos al nuevo nodo que creaste.
 
+const nodoImagen = document.createElement('img') //<img> pero vacio
+nodoImagen.src = 'img/woman_bw.jpg' // aca definimos la fuente de la imagen
+document.querySelector('header').appendChild(nodoImagen) // insertamos la imagen en algun lugar del documento HTML para que se muestre
 
-
+// el documento quedaria asi:
+/*
+<header>
+    <h1 id="titulo">Hola!</h1>
+    <h2>Escribamos un poco de código el día de hoy!</h2>
+    <img src="img/woman_bw.jpg" />
+  </header>
+*/
 
 
 
@@ -288,3 +290,23 @@
 // Levántate, estira las piernas y celebra tu logro.                      //
 // ¡Creo que esto amerita un festejo!                                     //
 ////////////////////////////////////////////////////////////////////////////
+
+/*
+
+const botonIngreso = document.querySelector('#ingresar')
+
+botonIngreso.onclick = function(){
+    const edadUsuario = Number(document.querySelector('#edad-usuario').value)
+    let textoResultado
+    if(edadUsuario < 18){
+        textoResultado = 'No podes ingresar'
+    }
+    else {
+        textoResultado = 'Podes ingresar'
+    }
+    document.querySelector('#resultado').innerText = textoResultado
+
+}
+
+
+*/

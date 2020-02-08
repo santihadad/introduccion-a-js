@@ -3,6 +3,7 @@
 // Preguntarle estos datos al usuario y guardarlos en 2 variables
 // Ejecutar la función con estos datos
 // Impriman el resultado en la consola
+/*
 function calcularEdad(anioActual, anioNacimiento) {
     return anioActual - anioNacimiento;
 }
@@ -43,26 +44,31 @@ const salarioAnual = Number(prompt('Cuál es tu salario mensual?'));
 console.log('Tu salario mensual es ' + calcularSalarioMensual(salarioAnual));
 console.log('Tu salario semanal es ' + calcularSalarioSemanal(salarioAnual));
 console.log('Tu salario diario es ' + calcularSalarioDiario(salarioAnual));
+*/
+
 
 /// SCOPE
 
 // Variable hoisting -> izar
-// console.log(hola); //Falla porque no está definida
+
+//console.log(mensaje); //Falla porque no está definida
+//var mensaje = "hola mundo"
 
 // console.log(mensaje); //No falla, pero muestra undefined... por qué?
 // var mensaje = 'Hola, mundo';
 // console.log(mensaje); //Hola, mundo
 
 // Y con let?
-// let mensaje = 'Hola, mundo';
-// console.log(mensaje); //error
+/*
+let mensaje = "Hola, mundo"
+console.log(mensaje)
 
 // function hoisting
 
-/*
+
 pruebaHoisting(); //funciona!
 function pruebaHoisting(){
-    console.log('prueba');
+    console.log('prueba');
 }
 //pruebaHoisting();
 */
@@ -91,15 +97,32 @@ function prueba(c) { //c es un parámetro de la función prueba. LOCAL.
     console.log('c dentro de la funcion pero fuera del if, vale: ' + c); // lo que sea que le pasen a prueba
     console.log('d dentro de la funcion pero fuera del if, vale: ' + d); // 4
     console.log('e dentro de la funcion pero fuera del if, vale: ' + e); // 5
-    // console.log('f dentro de la funcion pero fuera del if, vale: ' + f); // error
+    //console.log('f dentro de la funcion pero fuera del if, vale: ' + f); // error
 }
 
 prueba(3);
 
 console.log('a vale: ' + a); // 1
 console.log('b vale: ' + b); // 2
-// console.log('c vale: ' + c); // error
-// console.log('d vale: ' + d); // error
-// console.log('e vale: ' + e); // error
-// console.log('f vale: ' + f); // error
+console.log('c vale: ' + c); // error
+console.log('d vale: ' + d); // error
+console.log('e vale: ' + e); // error
+console.log('f vale: ' + f); // error
 */
+/*
+function calcularMesesVividos (mesesVividos){
+    console.log("meses vividos vale: " + mesesVividos)
+    console.log('anio de nacimiento vale: ' + anioNacimiento)
+    console.log('mes de nacimiento vale: ' + mesNacimiento)
+    
+    return (2020 - anioNacimiento)*12 + mesNacimiento
+}*/
+
+function calcularMesesVividos (anioNacimiento, mesNacimiento){
+    return (2020 - anioNacimiento)*12 + mesNacimiento  
+}
+
+let anioNacimiento = Number(prompt('en que anio naciste?')) //numero
+let mesNacimiento = Number(prompt('en que mes naciste?')) //numero
+
+console.log('Tenes ' + calcularMesesVividos(anioNacimiento, mesNacimiento) + ' meses vividos')
