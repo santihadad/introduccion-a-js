@@ -20,7 +20,7 @@
     Cuando estás escribiendo código que querés que la máquina ejecute, ponelos AFUERA de los bloques de comentario.
 */
 
-
+//alert('Hola, bienvenido a su autogestion')
 /*
     Mostrando texto
     ===============
@@ -47,15 +47,17 @@
 
 // Tarea: Ahora probá hacer un console.log de un mensaje que queramos.
 
-
 // Consejo: Para recargar el navegador podemos apretar 'CMD + R' en Mac y 'CTRL + R' en
 //      Windows.
 
 
 // Consejo: El atajo del teclado para guardar cambios a un archivo es 'CMD + S' en Mac y 'CTRL + S' en
 //      Windows.
-
-
+/*
+console.log('Hola')
+let NombredeVariable
+console.log('NombredeVariableEs ' + NombredeVariable)
+*/
 /*
     Variables
     =========
@@ -80,6 +82,11 @@
     También podemos crear (declarar) y darle valor (asignar) a una variable en un solo paso (la INICIALIZAMOS).
 
     let nuevaVariable = 1;
+*/
+//let nombre = 'Santiago'
+//console.log('Mi nombre es '+ nombre)
+
+/*
 
     Como pueden ver, le podemos dar distintos tipos de valores a nuestras variables -
     Cadenas de texto (String), Numeros (Number), Booleanos (Boolean), etc.
@@ -101,7 +108,8 @@
 */
 
 // TAREA: Creá 2 variables indefinidas, llamadas numeroUno y numeroDos.
-
+//let numeroUno
+//let numeroDos
 
 /*
     Podés usar el nombre de tus variables pare representar qué información tienen adentro, por ejemplo:
@@ -111,9 +119,14 @@
 
     Esto va a mostrar un cartelito con el texto 'Hola Mundo!'
 */
+//let saludo='Hola, Mundo'
+//alert(saludo)
 
 // Crear 2 variables nuevas, una con tu nombre, la segunda con tu edad. Dales un nombre apropriado y
 // mostralas con un alert.
+//let nombre = 'Santiago'
+//let edad = 21
+//alert('Mi nombre es ' + nombre + ' y mi edad es ' + edad)
 
 
 // Consejo: para mostrar 2 variables de texto al mismo tiempo, las podés unir usando el signo '+'. Ejemplo:
@@ -149,9 +162,11 @@
 */
 
 // TAREA: Crear una constante y mostrarla con un alert
-
+//const IVA = 21
+//alert(IVA)
 
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
+//IVA = 20
 
 
 // Consejo: No te olvides de comentar (//) los alerts y los errores intencionales (como en la tarea anterior) para
@@ -182,6 +197,10 @@
 // * 3ra variable llamada resultadoMultiplicacion que va a ser igual a
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
+//const cuatro = 4
+//const tres = 3
+//const resultadoMultiplicacion = cuatro * tres
+//console.log(resultadoMultiplicacion)
 
 
 /*
@@ -231,6 +250,12 @@
          function nombreFunction(argumento1, argumento2) {
          }
 */
+/*
+function duplicar(numero) {return numero * 2}
+duplicar(50)
+console.log(duplicar(50))
+console.log(duplicar(35))
+*/
 
 // TAREA: Es tu turno de crear una función!
 
@@ -239,16 +264,75 @@
 // Escribí código para que devuelva (return) la suma de numero1 y numero2
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
+//function sumar(numero1, numero2){return numero1 + numero2}
+//sumar(15,20)
+//console.log(sumar(15,20))
+
+
 
 // TAREA: Ahora creemos otra función llamada 'restar'
 //       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
 
-
+//function restar(numero1, numero2){return numero1 - numero2}
+//restar(1151,1)
+//console.log(restar(1151,1))
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
 
 // Consejo: Dejá las funciones como están, no las comentes, las vamos a usar de nuevo.
+/*
+let anioNacimiento = 1998
+let anioActual = 2019
+let miEdad = restar(anioActual,anioNacimiento)
+console.log('Mi edad es '+ miEdad)
+
+function saludar(nombre){return "Hola " + nombre}
+let nombre = prompt('Cual es tu nombre?')
+console.log(saludar(nombre))
+*/
+
+//Crear una funcion que tome como parametro el anio actual y el anio de nacimiento
+//Calcular la edad del usuario
+//Preguntarle estos datos al usuario y guardarlos en 2 variables
+//ejecutar la funcion con estos datos
+//imprimir el resultado en la consola
+/*
+function restarEdad(AnioActual,AnioNacimiento){return AnioActual - AnioNacimiento}
+let AnioNacimiento = Number(prompt('Indique anio de nacimiento'))
+let AnioActual = 2020
+let EdadUsuario = restarEdad(AnioActual,AnioNacimiento)
+console.log('Su edad es ' + EdadUsuario)
+*/
+
+//Preguntar el salario anual y calcular el salario mensual
+//Preguntar salario mensual y calcular anual
+//hacer lo mismo con el diario, por hora, etc
+
+
+
+
+/*
+const salarioMensual = Number(prompt('Cual es su salario mensual?'))
+const horasPorDia = Number(prompt('Cuantas horas trabaja por dia?'))
+const diasPorSemana = Number(prompt('Cuantos dias trabaja por semana?'))
+const mesesPorAnio = 12
+function salarioPorHora(salarioMensual, horasPorDia, diasPorSemana) { return salarioMensual / (horasPorDia * diasPorSemana) }
+function salarioPorAnio(salarioMensual, mesesPorAnio) { return salarioMensual * mesesPorAnio }
+function salarioDiario(salarioMensual, diasPorSemana) { return salarioMensual / (diasPorSemana * 4) }
+function impGanancias(salarioMensual, mesesPorAnio) { return (salarioMensual * mesesPorAnio) * 0.35 }
+let salarioHrs = salarioPorHora(salarioMensual, horasPorDia, diasPorSemana)
+let salarioAnio = salarioPorAnio(salarioMensual, mesesPorAnio)
+let salarioDias = salarioDiario(salarioMensual, diasPorSemana)
+let ganancias = impGanancias(salarioMensual, mesesPorAnio)
+console.log('Su salario por hora es de ' + salarioHrs)
+console.log('Su salario por anio es de ' + alarioAnio)
+console.log('Su salario por dia es de ' + salarioDias)
+console.log('Usted paga un total de ' + ganancias + ' en Impuesto a las Ganancias')
+*/
+
+
+
 
 /*
     Condicionales If-Else
@@ -331,6 +415,61 @@
 
 
 /*
+const operador = prompt('Ingrese +,-,*,/,**')
+const numero1 = Number(prompt('Ingrese un numero'))
+const numero2 = Number(prompt('Ingrese otro numero'))
+
+function sumar(numero1, numero2) {
+    return numero1 + numero2
+}
+
+function restar(numero1, numero2) {
+    return numero1 - numero2
+}
+function multiplicar(numero1, numero2) {
+    return numero1 * numero2
+}
+function dividir(numero1, numero2) {
+    return numero1 / numero2
+}
+function potencia(numero1, numero2) {
+    return numero1 ** numero2
+}
+
+let resultado
+
+if (operador === '+') {
+    resultado = sumar(numero1, numero2)
+}
+else if (operador === '*') {
+    resultado = multiplicar(numero1, numero2)
+}
+else if (operador === '/') {
+    resultado = dividir(numero1, numero2)
+}
+else if (operador === '**') {
+    resultado = potencia(numero1, numero2)
+}
+else if (operador === '-') {
+    resultado = restar(numero1, numero2)
+}
+else {
+    console.log('Operador ingresado no es valido')
+}
+
+console.log(`El resultado de ${numero1} ${operador} ${numero2} es ${resultado}`)
+*/
+
+
+
+
+
+
+
+
+
+
+/*
     'If' - 'Else if' - 'Else'
     ===================
 
@@ -341,7 +480,7 @@
         //algo
     else
         //algo que va a pasar si no se cumple ningún otra condición
-        
+
 
     Ejemplo:
 
@@ -354,7 +493,7 @@
         console.log('Nuestro número es igual a 7');
     }
 
-    Consejo: Podemos usar la cantidad de 'else if' que queramos uno después del otro, 
+    Consejo: Podemos usar la cantidad de 'else if' que queramos uno después del otro,
     el primero que es 'verdadero' es el único que pasa.
 */
 
@@ -379,7 +518,7 @@
     =================
     Poner un signo de exclamación (!) antes de un valor Booleano nos da el valor OPUESTO.
     Este operador ! se llama el operador "not".
-    
+
     El resultado de una comparación es un valor Booleano, lo podemos guardar en una variable así:
 
     const bool = (1 < 2);
@@ -400,6 +539,15 @@
 
 // TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
 // resultado en la consola.
+
+
+/*
+let miVariable = true;
+console.log(miVariable)
+console.log(!miVariable)
+console.log(!!miVariable)
+*/
+
 
 
 ////////////////////////////////////////////////////////////////////////////
