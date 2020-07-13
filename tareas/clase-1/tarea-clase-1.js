@@ -114,15 +114,16 @@ function calcularMesesVividos (mesesVividos){
     console.log("meses vividos vale: " + mesesVividos)
     console.log('anio de nacimiento vale: ' + anioNacimiento)
     console.log('mes de nacimiento vale: ' + mesNacimiento)
-    
+
     return (2020 - anioNacimiento)*12 + mesNacimiento
 }*/
-
+/*
 function calcularMesesVividos (anioNacimiento, mesNacimiento){
-    return (2020 - anioNacimiento)*12 + mesNacimiento  
+    return (2020 - anioNacimiento)*12 + mesNacimiento
 }
 
 let anioNacimiento = Number(prompt('en que anio naciste?')) //numero
 let mesNacimiento = Number(prompt('en que mes naciste?')) //numero
 
 console.log('Tenes ' + calcularMesesVividos(anioNacimiento, mesNacimiento) + ' meses vividos')
+*/
