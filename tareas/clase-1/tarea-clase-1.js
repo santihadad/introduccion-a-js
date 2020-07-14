@@ -54,20 +54,20 @@ console.log('Tu salario diario es ' + calcularSalarioDiario(salarioAnual));
 //console.log(mensaje); //Falla porque no está definida
 //var mensaje = "hola mundo"
 
-// console.log(mensaje); //No falla, pero muestra undefined... por qué?
-// var mensaje = 'Hola, mundo';
-// console.log(mensaje); //Hola, mundo
+//console.log(mensaje); //No falla, pero muestra undefined... por qué?
+//var mensaje = 'Hola, mundo';
+//console.log(mensaje); //Hola, mundo
 
 // Y con let?
-/*
-let mensaje = "Hola, mundo"
-console.log(mensaje)
+
+//let mensaje = "Hola, mundo"
+//console.log(mensaje)
 
 // function hoisting
 
-
+/*
 pruebaHoisting(); //funciona!
-function pruebaHoisting(){
+function pruebaHoisting() {
     console.log('prueba');
 }
 //pruebaHoisting();
@@ -80,7 +80,7 @@ let b = 2; //global
 function prueba(c) { //c es un parámetro de la función prueba. LOCAL.
     let d = 4; //local a la función
 
-    if(c === 3){
+    if (c === 3) {
         var e = 5; // por hoisting termina siendo local a la función
         let f = 6; // local al IF
 
@@ -96,8 +96,9 @@ function prueba(c) { //c es un parámetro de la función prueba. LOCAL.
     console.log('b dentro de la funcion pero fuera del if, vale: ' + b); // 2
     console.log('c dentro de la funcion pero fuera del if, vale: ' + c); // lo que sea que le pasen a prueba
     console.log('d dentro de la funcion pero fuera del if, vale: ' + d); // 4
-    console.log('e dentro de la funcion pero fuera del if, vale: ' + e); // 5
-    //console.log('f dentro de la funcion pero fuera del if, vale: ' + f); // error
+    console.log('e dentro de la funcion pero fuera del if, vale: ' + e); // 5 en este caso seria local a la funcion por el hoisting
+    console.log('f dentro de la funcion pero fuera del if, vale: ' + f); // error ya que solo es local al IF
+
 }
 
 prueba(3);
@@ -109,19 +110,24 @@ console.log('d vale: ' + d); // error
 console.log('e vale: ' + e); // error
 console.log('f vale: ' + f); // error
 */
+
 /*
-function calcularMesesVividos (mesesVividos){
+function calcularMesesVividos(mesesVividos) {
     console.log("meses vividos vale: " + mesesVividos)
     console.log('anio de nacimiento vale: ' + anioNacimiento)
     console.log('mes de nacimiento vale: ' + mesNacimiento)
 
-    return (2020 - anioNacimiento)*12 + mesNacimiento
-}*/
-/*
-function calcularMesesVividos (anioNacimiento, mesNacimiento){
-    return (2020 - anioNacimiento)*12 + mesNacimiento
+    return (2020 - anioNacimiento) * 12 + mesNacimiento
 }
 
+//Refactor de la funcion como la escribio Fabricio
+
+function calcularMesesVividos(anioNacimiento, mesNacimiento) {
+    return (2020 - anioNacimiento) * 12 + mesNacimiento
+}
+
+
+let mesesVividos
 let anioNacimiento = Number(prompt('en que anio naciste?')) //numero
 let mesNacimiento = Number(prompt('en que mes naciste?')) //numero
 

@@ -392,61 +392,39 @@ console.log(saludar(miNombre));
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
-
 /*
-const operador = prompt('Ingrese +,-,*,/,**')
-const numero1 = Number(prompt('Ingrese un numero'))
-const numero2 = Number(prompt('Ingrese otro numero'))
+let operador = prompt("Ingrese el simbolo de suma, resta, multiplicacion o division");
+let numero1 = 5;
+let numero2 = 10;
+let resultado;
 
 function sumar(numero1, numero2) {
     return numero1 + numero2
-}
-
-function restar(numero1, numero2) {
-    return numero1 - numero2
-}
+};
 function multiplicar(numero1, numero2) {
     return numero1 * numero2
-}
+};
 function dividir(numero1, numero2) {
     return numero1 / numero2
-}
-function potencia(numero1, numero2) {
-    return numero1 ** numero2
-}
-
-let resultado
-
-if (operador === '+') {
+};
+function restar(numero1, numero2) {
+    return numero1 - numero2
+};
+if (operador === "+") {
     resultado = sumar(numero1, numero2)
-}
-else if (operador === '*') {
+} else if (operador === "*") {
     resultado = multiplicar(numero1, numero2)
-}
-else if (operador === '/') {
+} else if (operador === "/") {
     resultado = dividir(numero1, numero2)
-}
-else if (operador === '**') {
-    resultado = potencia(numero1, numero2)
-}
-else if (operador === '-') {
+} else if (operador === "-") {
     resultado = restar(numero1, numero2)
+} else {
+    console.log("El operador ingresado no es valido")
 }
-else {
-    console.log('Operador ingresado no es valido')
-}
-
-console.log(`El resultado de ${numero1} ${operador} ${numero2} es ${resultado}`)
+if (operador === "+" || operador === "-" || operador === "*" || operador === "/") {
+    console.log(`El resultado de ${numero1} ${operador} ${numero2} es ${resultado} `);
+} else { };
 */
-
-
-
-
-
-
-
-
-
 
 /*
     'If' - 'Else if' - 'Else'
