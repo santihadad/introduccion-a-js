@@ -52,7 +52,7 @@ else {console.log('Mi edad es menor que la de usted')}
 // Si no entendemos la respuesta, le decimos que no entendimos la respuesta.
 // Punto bonus: SI, NO, Si, No, si, no.
 
-
+/*
 alert('Bienvenido al Bar de Santiago')
 let edad
 let respuestaSi = 'si'
@@ -69,7 +69,7 @@ if (documento === respuestaSi) {
         console.log('Usted no puede ingresar')
     }
     else {console.log('No entendi la respuesta de la edad')}
-    
+
 }
 else if (documento === respuestaNo) {
     console.log('Se necesita documento para ingresar');
@@ -77,4 +77,4 @@ else if (documento === respuestaNo) {
 else {
     console.log('No entendimos su respuesta');
 }
-
+*/

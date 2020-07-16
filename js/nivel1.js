@@ -455,20 +455,13 @@ if (operador === "+" || operador === "-" || operador === "*" || operador === "/"
 */
 
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
-
-
-
-
-
 // TAREA: Reescribamos el if-else que teníamos y extendámolos, agregando:
 //       'else if' el 'operador' es igual a '-' - llamar a la función 'restar'
 //       'else if' el 'operador' es igual a '/' - llamar a la función 'dividir'.
 //       'else if' el 'operador' es igual a '*' - llamar a la función 'multiplicar'.
 //       else console.log - "Perdón, no conozco ese operador".
 
-
-
-
+//HECHO (todo en la funcion de arriba o en la tarea clase 2)
 
 /*
     Operadores Booleanos
@@ -497,15 +490,10 @@ if (operador === "+" || operador === "-" || operador === "*" || operador === "/"
 // TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
 // resultado en la consola.
 
-
-/*
-let miVariable = true;
+let miVariable = true
 console.log(miVariable)
 console.log(!miVariable)
 console.log(!!miVariable)
-*/
-
-
 
 ////////////////////////////////////////////////////////////////////////////
 // Felicitaciones! Terminaste el Nivel 1 de la introducción a JavaScript! //
