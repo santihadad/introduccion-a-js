@@ -41,13 +41,9 @@
 
 // TAREA: Crea tu propio array, llamado comidasFavoritas, y escribi dentro algunas
 //       cosas que te gustan.
-
-
-//const comidasFavoritas = ['milanesa', 'asado', 'tortilla', 'oreo'];
-
-
-
-
+/*
+const comidasFavoritas = ["pizza", 'milanesa', 'asado'];
+*/
 /*
     Tamaño del Array
     ================
@@ -63,10 +59,9 @@
 
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
 // imprimi utilizando console.log el resultado.
-
-//console.log(comidasFavoritas.length)
-
-
+/*
+console.log(comidasFavoritas.length)
+*/
 /*
     Uso del Array
     =============
@@ -87,15 +82,10 @@
 */
 
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
-
 /*
-let primerItem = comidasFavoritas[0]
-let segundoItem = comidasFavoritas[1]
-let tercerItem = comidasFavoritas[2]
-console.log(tercerItem)
+let tercerItem = comidasFavoritas[2];
+console.log(tercerItem);
 */
-
-
 /*
     Cambio de Valores en Arrays
     =========================
@@ -115,22 +105,13 @@ console.log(tercerItem)
 
 // TAREA: Toma tu array de comidasFavoritas y reemplaza el primer valor
 // con cualquier otra cosa.
-
-
-//console.log(comidasFavoritas)
-//comidasFavoritas[1]='dulce de leche'
-
-
-
-
-
+/*
+comidasFavoritas[0] = "tortilla";
+*/
 // TAREA: console.log todo el array para verificar.
-
-//console.log(comidasFavoritas)
-
-
-
-
+/*
+console.log(comidasFavoritas);
+*/
 // TIP: ¡No te olvides que las posiciones de índice comienzan desde 0!
 
 /*
@@ -149,18 +130,14 @@ console.log(tercerItem)
 */
 
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
-
-//comidasFavoritas.push('pizza')
-
-
-
+/*
+console.log(comidasFavoritas);
+comidasFavoritas.push("helado");
+*/
 // TAREA: console.log todo el array para verificar.
-
-
-//console.log(comidasFavoritas)
-
-
-
+/*
+console.log(comidasFavoritas);
+*/
 /*
     Nota acerca Arrays constantes
     =============================
@@ -185,24 +162,14 @@ console.log(tercerItem)
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
 /*
-const a = [1,2,3]
-console.log(a)
-a.push(4)
-console.log(a)
-a [0] = 0 
-console.log(a)
-a.unshift(-1)
-console.log(a)
+const a = [1, 2, 3];
+console.log(a);
+a[0] = 4;
+console.log(a);
 */
-
 // TAREA: Observa lo que sucede si agregas algo con.push(), cambias algo
 //       con notación de corchetes (array[1]) y
 //       asigna un nuevo array completamente nuevo a la constante
-
-
-
-
-
 
 /*
     Bucles
@@ -250,34 +217,18 @@ console.log(a)
       // + 1 es un contador / tamaño del paso
     }
 */
-//TAREA
-
 
 /*
 let numero = 0;
-
-while (numero<10){
-    numero += 1
+while (numero < 10) {
+    console.log('JavaScript es increible!!');
+    numero = numero + 1;
 }
 */
-
-
-
 
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 //HINT: contadores pueden ser para arribar o para abajo
-
-
-/*
-let numero = 10;
-while (numero >0){
-
-    numero -= 1
-console.log(numero)
-
-}
-*/
 
 
 /*
@@ -295,11 +246,14 @@ console.log(numero)
     }
 */
 
+/*
+let i;
+for (i = 0; i <= 5; i = i + 1) {
+    console.log('Hola!' + i);
+}
+*/
+
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
-
-
-
-
 
 
 /*
@@ -324,10 +278,6 @@ console.log(numero)
 */
 
 // TAREA: Probalo con tu comidasFavoritas array.
-
-
-
-
 
 
 /*
