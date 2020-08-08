@@ -53,7 +53,7 @@
     Los archivos CSS consisten en "bloques de declaración". Cada bloque de
     declaración está compuesto de un "selector" y de un conjunto de reglas de estilo
     visuales. Una declaración se ve así:
-    
+
     [selector] {
       nombre-de-estilo: valor;
       nombre-de-estilo: valor;
@@ -119,20 +119,17 @@
     // Eso quiere decir que se pueden cambiar los atributos y propiedades del elemento,
     // pero no la variable en sí misma. Vas a ver esto en acción ahora mismo.
 */
-/*
-const nuestroTwitter = document.querySelector('.twitter');
-console.log(nuestroTwitter)
-*/
 
 // TAREA: Ahora te toca a vos! — Obtené la etiqueta h1 de la página y guardala en una variable
 //       variable llamada nuestroTitulo.
 //       Utilizá console.log para ver lo que obtuviste!
 
-
-const titulo = document.querySelector('h1')
-console.log(titulo)
-
-
+/*
+const nuestroTitulo = document.querySelector("h1");
+console.log(nuestroTitulo);
+console.log(nuestroTitulo.innerText);
+nuestroTitulo.innerText = "Hola r/argentina-programa"
+*/
 
 /*
     Obteniendo elementos similares.
@@ -151,27 +148,26 @@ console.log(titulo)
 
 // TAREA: Obtené todos los elementos <li> de la página en una variable llamada mediaLinks.
 
-const mediaLinks = document.querySelectorAll('li')
-console.log(mediaLinks)
-
-// TAREA: Ahora utilizá console.log para ver la cantidad de 
+// TAREA: Ahora utilizá console.log para ver la cantidad de
 // elementos li que hay con mediaLinks.length
-
-console.log(mediaLinks.length)
-
 
 // TAREA: ¿Te acordás de los bucles del nivel 2? Usando lo que sabés de ellos, realizá iteraciones
 //      sobre cada item de mediaLinks y mostralos en pantalla con console.log
 
-for(let i=0; i<mediaLinks.length; i++){
-    console.log(mediaLinks[i])
-}
+/*
+const mediaLinks = document.querySelectorAll("li");
+console.log(mediaLinks);
 
+for (let i = 0; i < mediaLinks.length; i++) {
+    console.log(mediaLinks[i].innerText)
+    mediaLinks[i].innerText = "Hola"
+};
+*/
 
 /*
     Propiedades de los elementos
     ==================
-    
+
     Ok, hasta acá todo bien. Peeeroo, ¿que pasa si queremos obtener SOLO el texto
     de nuestra etiqueta 'h1'?
     Los elementos de página tienen una propiedad para esto: '.textContent'.
@@ -185,14 +181,12 @@ for(let i=0; i<mediaLinks.length; i++){
 // TAREA: Obtené el contenido de nuestro elemento 'h1'
 // y utilizá console.log para mostrarlo.
 
-console.log(titulo.textContent)
-console.log(titulo.innerText)
 
 /*
     Editar el contenido de la página
     ====================
 
-    Podemos simplemente cambiar el contenido de las étiquetas utilizando la propiedad que 
+    Podemos simplemente cambiar el contenido de las étiquetas utilizando la propiedad que
     vimos recién, '.textContent'.
 
     Ejemplo:
@@ -203,13 +197,11 @@ console.log(titulo.innerText)
 */
 
 // TAREA: Hagamos un nuevo título! Cambiá el contenido de nuestro 'h1' y ponele lo que quieras.
-const nombre = prompt('Como te llamas?')
-titulo.textContent = ('Hola ' + nombre)
 
 /*
     Editando atributos
     ==================
-    
+
     También podemos cambiar y establecer atributos en nuestros elementos.
 
     Ejemplo:
@@ -219,7 +211,6 @@ titulo.textContent = ('Hola ' + nombre)
 */
 
 // TAREA: Actualizá el valor del atributo 'src' de nuestra etiqueta 'img' a "img/kittens.jpeg".
-document.querySelector("img").src="img/kittens.jpeg";
 
 
 /*
@@ -270,9 +261,6 @@ document.querySelector("img").src="img/kittens.jpeg";
 //
 // P.S. También les podés dar estilos al nuevo nodo que creaste.
 
-const nodoImagen = document.createElement('img') //<img> pero vacio
-nodoImagen.src = 'img/woman_bw.jpg' // aca definimos la fuente de la imagen
-document.querySelector('header').appendChild(nodoImagen) // insertamos la imagen en algun lugar del documento HTML para que se muestre
 
 // el documento quedaria asi:
 /*
