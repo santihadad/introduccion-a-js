@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tarea 2: Salario Familiar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="tarea-2.css" />
+  </head>
+  <body>
+    <h2>Bienvenido!!</h2>
+    <p>
+      Añade los integrantes de tu familia que perciban sueldo, y detalla su
+      valor en <strong>$</strong>
+    </p>
+    <form id="salarios-familia">
+      <button id="agregar">Agregar miembro</button>
+      <button id="quitar">Quitar miembro</button>
+      <button id="calcular" class="oculto">Calcular</button>
+      <button type="reset" id="reiniciar" class="oculto">Reinicar</button>
+      <div id="integrantes-familia"></div>
+      <div id="resultados" class="oculto">
+        <p>Mayor salario anual: <strong id="mayor-salario"></strong></p>
+        <p>Menor salario anual: <strong id="menor-salario"></strong></p>
+        <p>
+          Promedio salario anual: <strong id="promedio-salario-anual"></strong>
+        </p>
+        <p>
+          Promedio salario mensual:
+          <strong id="promedio-salario-mensual"></strong>
+        </p>
+      </div>
+    </form>
+    <script src="tarea-2-calculos.js"></script>
+    <script src="tarea-2.js"></script>
+  </body>
+</html>
